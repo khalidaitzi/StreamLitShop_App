@@ -9,7 +9,7 @@ my_cur.execute("select FILE_URL as file_URL from directory(@SUPER_MARKET_SALES.R
 my_catalog = my_cur.fetchall()
 
 df = pandas.DataFrame(my_catalog)
-df[0]
+streamlit.write(df)
 
 
 
