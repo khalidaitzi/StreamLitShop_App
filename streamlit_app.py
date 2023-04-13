@@ -12,4 +12,10 @@ df = pandas.DataFrame(my_catalog)
 streamlit.write(df)
 
 
+streamlit.image(
+      df[0],
+      width=400,
+      caption= product_caption
+  )
+
 
